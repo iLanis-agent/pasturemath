@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pasture Math - app</title>
+<style>
+  :root { --accent:#4f6b3a; --ink:#1d2214; --paper:#f6f7f2; --soft:#e6e9d9; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:Georgia, "Times New Roman", serif; background:var(--paper); color:var(--ink); line-height:1.55; }
+  main { max-width:660px; margin:0 auto; }
+  .boundary { background:#fdeaea; border-left:6px solid #b03030; color:#5c1c1c; border-radius:6px; padding:1rem 1.1rem; }
+  .boundary strong { display:block; margin-bottom:.3rem; }
+  body { padding:2rem 1.2rem; }
+  h1 { font-size:1.8rem; color:var(--accent); }
+  .boundary { margin:1rem 0 1.4rem; }
+  .panel { background:var(--soft); border-left:5px solid var(--accent); border-radius:6px; padding:1rem 1.1rem; margin-bottom:1.1rem; }
+  h2 { font-size:1.1rem; margin-bottom:.6rem; }
+  p.note { font-size:.9rem; margin-bottom:.4rem; }
+  label { display:block; font-size:.9rem; margin:.45rem 0 .1rem; }
+  input { width:100%; padding:.45rem .55rem; font-size:1rem; border:1px solid #a3ad8c; border-radius:6px; background:#fff; color:var(--ink); }
+  .row2 { display:grid; grid-template-columns:1fr 1fr; gap:.6rem; }
+  .out { margin-top:.7rem; font-size:.98rem; background:#fff; border:1px dashed #a3ad8c; border-radius:6px; padding:.6rem .7rem; min-height:2.4rem; overflow-wrap:anywhere; }
+  .out.err { border-color:#b03030; color:#8a1f1f; }
+  footer { margin-top:1.8rem; font-size:.85rem; color:#6d7757; }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Pasture Math</h1>
+  <div class="boundary">
+    <strong>Boundary: arithmetic only</strong>
+    This page counts dry matter with multiplication and division: the grazable forage a pasture offers, the dry matter a herd demands, the days the pasture holds, and the rest a rotation gives. The acres, the yield, the herd and the rotation are yours to measure or read off your own grazing notes. It applies the counting as written, so it has not walked your fields and does not know your forage growth, your season, your species, your soil or your animals' condition, and it gives no verdict that a stocking is safe for the land or the herd. Every number here is your own entry.
+  </div>
+
+  <div class="panel">
+    <h2>The forage truth</h2>
+    <p class="note">Grazable forage: acres times yield times utilization.</p>
+    <div class="row2">
+      <div><label for="f-a">Acres</label><input id="f-a" type="text" value="10"></div>
+      <div><label for="f-y">Dry matter yield (lb per acre)</label><input id="f-y" type="text" value="2000"></div>
+    </div>
+    <div class="row2">
+      <div><label for="f-u">Utilization (%)</label><input id="f-u" type="text" value="50"></div>
+    </div>
+    <div class="out" id="f-out"></div>
+  </div>
+
+  <div class="panel">
+    <h2>The demand truth</h2>
+    <p class="note">Herd demand: head times weight times intake times days.</p>
+    <div class="row2">
+      <div><label for="d-h">Head</label><input id="d-h" type="text" value="5"></div>
+      <div><label for="d-w">Weight per head (lb)</label><input id="d-w" type="text" value="1000"></div>
+    </div>
+    <div class="row2">
+      <div><label for="d-k">Intake (% of body weight a day)</label><input id="d-k" type="text" value="3"></div>
+      <div><label for="d-d">Days</label><input id="d-d" type="text" value="30"></div>
+    </div>
+    <div class="out" id="d-out"></div>
+  </div>
+
+  <div class="panel">
+    <h2>The days truth</h2>
+    <p class="note">Days the pasture holds: floor division, nothing rounded up.</p>
+    <div class="row2">
+      <div><label for="t-f">Grazable forage (lb)</label><input id="t-f" type="text" value="10000"></div>
+      <div><label for="t-r">Herd demand (lb a day)</label><input id="t-r" type="text" value="150"></div>
+    </div>
+    <div class="out" id="t-out"></div>
+  </div>
+
+  <div class="panel">
+    <h2>The rest truth</h2>
+    <p class="note">Rest before the return: the paddocks not being grazed, times the graze.</p>
+    <div class="row2">
+      <div><label for="r-n">Paddocks</label><input id="r-n" type="text" value="5"></div>
+      <div><label for="r-g">Grazing days each</label><input id="r-g" type="text" value="6"></div>
+    </div>
+    <div class="out" id="r-out"></div>
+  </div>
+
+  <footer>Pasture Math is exact arithmetic over the numbers you enter. <a href="index.html">Why it exists</a>.</footer>
+</main>
+<script src="engine.js"></script>
+<script>
+  function show(id, fn) {
+    const out = document.getElementById(id);
+    try { out.textContent = fn(); out.classList.remove("err"); }
+    catch (e) { out.textContent = e.message; out.classList.add("err"); }
+  }
+  function recalc() {
+    const v = (id) => document.getElementById(id).value;
+    show("f-out", () => forageTruth(v("f-a"), v("f-y"), v("f-u")));
+    show("d-out", () => demandTruth(v("d-h"), v("d-w"), v("d-k"), v("d-d")));
+    show("t-out", () => daysTruth(v("t-f"), v("t-r")));
+    show("r-out", () => restTruth(v("r-n"), v("r-g")));
+  }
+  document.querySelectorAll("input").forEach((el) => {
+    el.addEventListener("input", recalc);
+    el.addEventListener("change", recalc);
+  });
+  recalc();
+</script>
+</body>
+</html>
