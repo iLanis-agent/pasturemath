@@ -1,0 +1,932 @@
+{
+ "cases": [
+  {
+   "fn": "forage",
+   "args": [
+    "10",
+    "2000",
+    "50"
+   ],
+   "expect": "The pasture of 10 acres at 2000 lb of dry matter an acre, grazed at 50%, offers 10000 lb of grazable forage."
+  },
+  {
+   "fn": "demand",
+   "args": [
+    "5",
+    "1000",
+    "3",
+    "30"
+   ],
+   "expect": "The herd of 5 head at 1000 lb each, eating 3% of body weight a day for 30 days, demands 4500 lb of dry matter."
+  },
+  {
+   "fn": "days",
+   "args": [
+    "10000",
+    "150"
+   ],
+   "expect": "The pasture offering 10000 lb against a herd eating 150 lb a day holds for 66 days."
+  },
+  {
+   "fn": "rest",
+   "args": [
+    "5",
+    "6"
+   ],
+   "expect": "The rotation of 5 paddocks at 6 days of grazing each gives 24 days of rest before the return."
+  },
+  {
+   "fn": "forage",
+   "args": [
+    "28913",
+    "90695",
+    "86"
+   ],
+   "expect": "The pasture of 28913 acres at 90695 lb of dry matter an acre, grazed at 86%, offers 2255147500 lb of grazable forage."
+  },
+  {
+   "fn": "forage",
+   "args": [
+    "71859",
+    "48097",
+    "21"
+   ],
+   "expect": "The pasture of 71859 acres at 48097 lb of dry matter an acre, grazed at 21%, offers 725802488 lb of grazable forage."
+  },
+  {
+   "fn": "forage",
+   "args": [
+    "3820",
+    "54138",
+    "70"
+   ],
+   "expect": "The pasture of 3820 acres at 54138 lb of dry matter an acre, grazed at 70%, offers 144765012 lb of grazable forage."
+  },
+  {
+   "fn": "forage",
+   "args": [
+    "51862",
+    "51575",
+    "55"
+   ],
+   "expect": "The pasture of 51862 acres at 51575 lb of dry matter an acre, grazed at 55%, offers 1471130458 lb of grazable forage."
+  },
+  {
+   "fn": "forage",
+   "args": [
+    "82858",
+    "85349",
+    "74"
+   ],
+   "expect": "The pasture of 82858 acres at 85349 lb of dry matter an acre, grazed at 74%, offers 5233167107 lb of grazable forage."
+  },
+  {
+   "fn": "forage",
+   "args": [
+    "69058",
+    "62580",
+    "78"
+   ],
+   "expect": "The pasture of 69058 acres at 62580 lb of dry matter an acre, grazed at 78%, offers 3370886719 lb of grazable forage."
+  },
+  {
+   "fn": "forage",
+   "args": [
+    "94242",
+    "88361",
+    "92"
+   ],
+   "expect": "The pasture of 94242 acres at 88361 lb of dry matter an acre, grazed at 92%, offers 7661131973 lb of grazable forage."
+  },
+  {
+   "fn": "forage",
+   "args": [
+    "16544",
+    "88884",
+    "75"
+   ],
+   "expect": "The pasture of 16544 acres at 88884 lb of dry matter an acre, grazed at 75%, offers 1102872672 lb of grazable forage."
+  },
+  {
+   "fn": "forage",
+   "args": [
+    "68422",
+    "4890",
+    "38"
+   ],
+   "expect": "The pasture of 68422 acres at 4890 lb of dry matter an acre, grazed at 38%, offers 127141760 lb of grazable forage."
+  },
+  {
+   "fn": "forage",
+   "args": [
+    "40646",
+    "63982",
+    "89"
+   ],
+   "expect": "The pasture of 40646 acres at 63982 lb of dry matter an acre, grazed at 89%, offers 2314545011 lb of grazable forage."
+  },
+  {
+   "fn": "forage",
+   "args": [
+    "27355",
+    "17221",
+    "19"
+   ],
+   "expect": "The pasture of 27355 acres at 17221 lb of dry matter an acre, grazed at 19%, offers 89505286 lb of grazable forage."
+  },
+  {
+   "fn": "forage",
+   "args": [
+    "87452",
+    "42779",
+    "97"
+   ],
+   "expect": "The pasture of 87452 acres at 42779 lb of dry matter an acre, grazed at 97%, offers 3628875835 lb of grazable forage."
+  },
+  {
+   "fn": "forage",
+   "args": [
+    "3372",
+    "78872",
+    "22"
+   ],
+   "expect": "The pasture of 3372 acres at 78872 lb of dry matter an acre, grazed at 22%, offers 58510404 lb of grazable forage."
+  },
+  {
+   "fn": "forage",
+   "args": [
+    "5267",
+    "14792",
+    "11"
+   ],
+   "expect": "The pasture of 5267 acres at 14792 lb of dry matter an acre, grazed at 11%, offers 8570041 lb of grazable forage."
+  },
+  {
+   "fn": "forage",
+   "args": [
+    "98170",
+    "20240",
+    "75"
+   ],
+   "expect": "The pasture of 98170 acres at 20240 lb of dry matter an acre, grazed at 75%, offers 1490220600 lb of grazable forage."
+  },
+  {
+   "fn": "forage",
+   "args": [
+    "58775",
+    "37599",
+    "45"
+   ],
+   "expect": "The pasture of 58775 acres at 37599 lb of dry matter an acre, grazed at 45%, offers 994446551 lb of grazable forage."
+  },
+  {
+   "fn": "forage",
+   "args": [
+    "83177",
+    "54100",
+    "33"
+   ],
+   "expect": "The pasture of 83177 acres at 54100 lb of dry matter an acre, grazed at 33%, offers 1484958981 lb of grazable forage."
+  },
+  {
+   "fn": "forage",
+   "args": [
+    "25099",
+    "5374",
+    "85"
+   ],
+   "expect": "The pasture of 25099 acres at 5374 lb of dry matter an acre, grazed at 85%, offers 114649722 lb of grazable forage."
+  },
+  {
+   "fn": "forage",
+   "args": [
+    "77533",
+    "90163",
+    "61"
+   ],
+   "expect": "The pasture of 77533 acres at 90163 lb of dry matter an acre, grazed at 61%, offers 4264270806 lb of grazable forage."
+  },
+  {
+   "fn": "forage",
+   "args": [
+    "56440",
+    "30040",
+    "41"
+   ],
+   "expect": "The pasture of 56440 acres at 30040 lb of dry matter an acre, grazed at 41%, offers 695137616 lb of grazable forage."
+  },
+  {
+   "fn": "forage",
+   "args": [
+    "36817",
+    "22483",
+    "3"
+   ],
+   "expect": "The pasture of 36817 acres at 22483 lb of dry matter an acre, grazed at 3%, offers 24832698 lb of grazable forage."
+  },
+  {
+   "fn": "forage",
+   "args": [
+    "52557",
+    "12067",
+    "38"
+   ],
+   "expect": "The pasture of 52557 acres at 12067 lb of dry matter an acre, grazed at 38%, offers 240998021 lb of grazable forage."
+  },
+  {
+   "fn": "forage",
+   "args": [
+    "50404",
+    "50479",
+    "9"
+   ],
+   "expect": "The pasture of 50404 acres at 50479 lb of dry matter an acre, grazed at 9%, offers 228990916 lb of grazable forage."
+  },
+  {
+   "fn": "forage",
+   "args": [
+    "52626",
+    "52955",
+    "64"
+   ],
+   "expect": "The pasture of 52626 acres at 52955 lb of dry matter an acre, grazed at 64%, offers 1783558291 lb of grazable forage."
+  },
+  {
+   "fn": "forage",
+   "args": [
+    "52733",
+    "32439",
+    "72"
+   ],
+   "expect": "The pasture of 52733 acres at 32439 lb of dry matter an acre, grazed at 72%, offers 1231636167 lb of grazable forage."
+  },
+  {
+   "fn": "demand",
+   "args": [
+    "50310",
+    "7186",
+    "9.66",
+    "5040"
+   ],
+   "expect": "The herd of 50310 head at 7186 lb each, eating 9.66% of body weight a day for 5040 days, demands 176014802658.24 lb of dry matter."
+  },
+  {
+   "fn": "demand",
+   "args": [
+    "27270",
+    "9318",
+    "3.37",
+    "8197"
+   ],
+   "expect": "The herd of 27270 head at 9318 lb each, eating 3.37% of body weight a day for 8197 days, demands 70192818294.35 lb of dry matter."
+  },
+  {
+   "fn": "demand",
+   "args": [
+    "84337",
+    "4147",
+    "3.78",
+    "6000"
+   ],
+   "expect": "The herd of 84337 head at 4147 lb each, eating 3.78% of body weight a day for 6000 days, demands 79322288245.2 lb of dry matter."
+  },
+  {
+   "fn": "demand",
+   "args": [
+    "40020",
+    "2110",
+    "4.75",
+    "4060"
+   ],
+   "expect": "The herd of 40020 head at 2110 lb each, eating 4.75% of body weight a day for 4060 days, demands 16284678270 lb of dry matter."
+  },
+  {
+   "fn": "demand",
+   "args": [
+    "96393",
+    "3563",
+    "4.18",
+    "6801"
+   ],
+   "expect": "The herd of 96393 head at 3563 lb each, eating 4.18% of body weight a day for 6801 days, demands 97636089275.39 lb of dry matter."
+  },
+  {
+   "fn": "demand",
+   "args": [
+    "38298",
+    "4546",
+    "5.4",
+    "8457"
+   ],
+   "expect": "The herd of 38298 head at 4546 lb each, eating 5.4% of body weight a day for 8457 days, demands 79508876484.02 lb of dry matter."
+  },
+  {
+   "fn": "demand",
+   "args": [
+    "41745",
+    "5217",
+    "9.12",
+    "5110"
+   ],
+   "expect": "The herd of 41745 head at 5217 lb each, eating 9.12% of body weight a day for 5110 days, demands 101494156967.28 lb of dry matter."
+  },
+  {
+   "fn": "demand",
+   "args": [
+    "50756",
+    "4314",
+    "9.63",
+    "8691"
+   ],
+   "expect": "The herd of 50756 head at 4314 lb each, eating 9.63% of body weight a day for 8691 days, demands 183258263297.53 lb of dry matter."
+  },
+  {
+   "fn": "demand",
+   "args": [
+    "18183",
+    "2761",
+    "3.16",
+    "638"
+   ],
+   "expect": "The herd of 18183 head at 2761 lb each, eating 3.16% of body weight a day for 638 days, demands 1012137944.69 lb of dry matter."
+  },
+  {
+   "fn": "demand",
+   "args": [
+    "76143",
+    "3337",
+    "9.27",
+    "2645"
+   ],
+   "expect": "The herd of 76143 head at 3337 lb each, eating 9.27% of body weight a day for 2645 days, demands 62300509875.08 lb of dry matter."
+  },
+  {
+   "fn": "demand",
+   "args": [
+    "30715",
+    "9174",
+    "7.52",
+    "4799"
+   ],
+   "expect": "The herd of 30715 head at 9174 lb each, eating 7.52% of body weight a day for 4799 days, demands 101689906021.97 lb of dry matter."
+  },
+  {
+   "fn": "demand",
+   "args": [
+    "85272",
+    "906",
+    "6.27",
+    "3258"
+   ],
+   "expect": "The herd of 85272 head at 906 lb each, eating 6.27% of body weight a day for 3258 days, demands 15781681257.09 lb of dry matter."
+  },
+  {
+   "fn": "demand",
+   "args": [
+    "39403",
+    "9348",
+    "9.66",
+    "1021"
+   ],
+   "expect": "The herd of 39403 head at 9348 lb each, eating 9.66% of body weight a day for 1021 days, demands 36328783960.78 lb of dry matter."
+  },
+  {
+   "fn": "demand",
+   "args": [
+    "54940",
+    "2083",
+    "5.26",
+    "6118"
+   ],
+   "expect": "The herd of 54940 head at 2083 lb each, eating 5.26% of body weight a day for 6118 days, demands 36827576628.14 lb of dry matter."
+  },
+  {
+   "fn": "demand",
+   "args": [
+    "76158",
+    "755",
+    "8.03",
+    "9122"
+   ],
+   "expect": "The herd of 76158 head at 755 lb each, eating 8.03% of body weight a day for 9122 days, demands 42118034427.41 lb of dry matter."
+  },
+  {
+   "fn": "demand",
+   "args": [
+    "71572",
+    "4023",
+    "1.48",
+    "5494"
+   ],
+   "expect": "The herd of 71572 head at 4023 lb each, eating 1.48% of body weight a day for 5494 days, demands 23412271745.35 lb of dry matter."
+  },
+  {
+   "fn": "demand",
+   "args": [
+    "51846",
+    "1167",
+    "6.96",
+    "1190"
+   ],
+   "expect": "The herd of 51846 head at 1167 lb each, eating 6.96% of body weight a day for 1190 days, demands 5011206652.37 lb of dry matter."
+  },
+  {
+   "fn": "demand",
+   "args": [
+    "63685",
+    "3",
+    "8.07",
+    "5019"
+   ],
+   "expect": "The herd of 63685 head at 3 lb each, eating 8.07% of body weight a day for 5019 days, demands 77383637.13 lb of dry matter."
+  },
+  {
+   "fn": "demand",
+   "args": [
+    "1973",
+    "9420",
+    "5.79",
+    "8558"
+   ],
+   "expect": "The herd of 1973 head at 9420 lb each, eating 5.79% of body weight a day for 8558 days, demands 9209346932.41 lb of dry matter."
+  },
+  {
+   "fn": "demand",
+   "args": [
+    "20865",
+    "7952",
+    "7.82",
+    "7249"
+   ],
+   "expect": "The herd of 20865 head at 7952 lb each, eating 7.82% of body weight a day for 7249 days, demands 94054507410.86 lb of dry matter."
+  },
+  {
+   "fn": "demand",
+   "args": [
+    "64890",
+    "9980",
+    "5.19",
+    "9257"
+   ],
+   "expect": "The herd of 64890 head at 9980 lb each, eating 5.19% of body weight a day for 9257 days, demands 311132900044.26 lb of dry matter."
+  },
+  {
+   "fn": "demand",
+   "args": [
+    "65013",
+    "3553",
+    "3.75",
+    "6853"
+   ],
+   "expect": "The herd of 65013 head at 3553 lb each, eating 3.75% of body weight a day for 6853 days, demands 59361848183.14 lb of dry matter."
+  },
+  {
+   "fn": "demand",
+   "args": [
+    "70155",
+    "6606",
+    "1.27",
+    "168"
+   ],
+   "expect": "The herd of 70155 head at 6606 lb each, eating 1.27% of body weight a day for 168 days, demands 988803969.05 lb of dry matter."
+  },
+  {
+   "fn": "demand",
+   "args": [
+    "52091",
+    "1960",
+    "3.64",
+    "3520"
+   ],
+   "expect": "The herd of 52091 head at 1960 lb each, eating 3.64% of body weight a day for 3520 days, demands 13081658670.08 lb of dry matter."
+  },
+  {
+   "fn": "demand",
+   "args": [
+    "34928",
+    "7661",
+    "4.2",
+    "7760"
+   ],
+   "expect": "The herd of 34928 head at 7661 lb each, eating 4.2% of body weight a day for 7760 days, demands 87210784335.36 lb of dry matter."
+  },
+  {
+   "fn": "days",
+   "args": [
+    "52435257",
+    "33470.71"
+   ],
+   "expect": "The pasture offering 52435257 lb against a herd eating 33470.71 lb a day holds for 1566 days."
+  },
+  {
+   "fn": "days",
+   "args": [
+    "26785916",
+    "67237.93"
+   ],
+   "expect": "The pasture offering 26785916 lb against a herd eating 67237.93 lb a day holds for 398 days."
+  },
+  {
+   "fn": "days",
+   "args": [
+    "84624953",
+    "58241.67"
+   ],
+   "expect": "The pasture offering 84624953 lb against a herd eating 58241.67 lb a day holds for 1452 days."
+  },
+  {
+   "fn": "days",
+   "args": [
+    "67675001",
+    "36329.96"
+   ],
+   "expect": "The pasture offering 67675001 lb against a herd eating 36329.96 lb a day holds for 1862 days."
+  },
+  {
+   "fn": "days",
+   "args": [
+    "71231986",
+    "35423.62"
+   ],
+   "expect": "The pasture offering 71231986 lb against a herd eating 35423.62 lb a day holds for 2010 days."
+  },
+  {
+   "fn": "days",
+   "args": [
+    "61159471",
+    "22568.23"
+   ],
+   "expect": "The pasture offering 61159471 lb against a herd eating 22568.23 lb a day holds for 2709 days."
+  },
+  {
+   "fn": "days",
+   "args": [
+    "76404372",
+    "18149.61"
+   ],
+   "expect": "The pasture offering 76404372 lb against a herd eating 18149.61 lb a day holds for 4209 days."
+  },
+  {
+   "fn": "days",
+   "args": [
+    "85360686",
+    "66662.64"
+   ],
+   "expect": "The pasture offering 85360686 lb against a herd eating 66662.64 lb a day holds for 1280 days."
+  },
+  {
+   "fn": "days",
+   "args": [
+    "38427062",
+    "9760.15"
+   ],
+   "expect": "The pasture offering 38427062 lb against a herd eating 9760.15 lb a day holds for 3937 days."
+  },
+  {
+   "fn": "days",
+   "args": [
+    "25009425",
+    "2535.1"
+   ],
+   "expect": "The pasture offering 25009425 lb against a herd eating 2535.1 lb a day holds for 9865 days."
+  },
+  {
+   "fn": "days",
+   "args": [
+    "88739330",
+    "45870.04"
+   ],
+   "expect": "The pasture offering 88739330 lb against a herd eating 45870.04 lb a day holds for 1934 days."
+  },
+  {
+   "fn": "days",
+   "args": [
+    "41366580",
+    "94597.79"
+   ],
+   "expect": "The pasture offering 41366580 lb against a herd eating 94597.79 lb a day holds for 437 days."
+  },
+  {
+   "fn": "days",
+   "args": [
+    "46061130",
+    "74012.49"
+   ],
+   "expect": "The pasture offering 46061130 lb against a herd eating 74012.49 lb a day holds for 622 days."
+  },
+  {
+   "fn": "days",
+   "args": [
+    "91105186",
+    "2821.42"
+   ],
+   "expect": "The pasture offering 91105186 lb against a herd eating 2821.42 lb a day holds for 32290 days."
+  },
+  {
+   "fn": "days",
+   "args": [
+    "79832338",
+    "19242.23"
+   ],
+   "expect": "The pasture offering 79832338 lb against a herd eating 19242.23 lb a day holds for 4148 days."
+  },
+  {
+   "fn": "days",
+   "args": [
+    "37490252",
+    "19055"
+   ],
+   "expect": "The pasture offering 37490252 lb against a herd eating 19055 lb a day holds for 1967 days."
+  },
+  {
+   "fn": "days",
+   "args": [
+    "3045131",
+    "33645.21"
+   ],
+   "expect": "The pasture offering 3045131 lb against a herd eating 33645.21 lb a day holds for 90 days."
+  },
+  {
+   "fn": "days",
+   "args": [
+    "39060269",
+    "70303.54"
+   ],
+   "expect": "The pasture offering 39060269 lb against a herd eating 70303.54 lb a day holds for 555 days."
+  },
+  {
+   "fn": "days",
+   "args": [
+    "50930723",
+    "49787.46"
+   ],
+   "expect": "The pasture offering 50930723 lb against a herd eating 49787.46 lb a day holds for 1022 days."
+  },
+  {
+   "fn": "days",
+   "args": [
+    "64724666",
+    "98825.48"
+   ],
+   "expect": "The pasture offering 64724666 lb against a herd eating 98825.48 lb a day holds for 654 days."
+  },
+  {
+   "fn": "rest",
+   "args": [
+    "588",
+    "281"
+   ],
+   "expect": "The rotation of 588 paddocks at 281 days of grazing each gives 164947 days of rest before the return."
+  },
+  {
+   "fn": "rest",
+   "args": [
+    "499",
+    "569"
+   ],
+   "expect": "The rotation of 499 paddocks at 569 days of grazing each gives 283362 days of rest before the return."
+  },
+  {
+   "fn": "rest",
+   "args": [
+    "520",
+    "1000"
+   ],
+   "expect": "The rotation of 520 paddocks at 1000 days of grazing each gives 519000 days of rest before the return."
+  },
+  {
+   "fn": "rest",
+   "args": [
+    "792",
+    "118"
+   ],
+   "expect": "The rotation of 792 paddocks at 118 days of grazing each gives 93338 days of rest before the return."
+  },
+  {
+   "fn": "rest",
+   "args": [
+    "214",
+    "146"
+   ],
+   "expect": "The rotation of 214 paddocks at 146 days of grazing each gives 31098 days of rest before the return."
+  },
+  {
+   "fn": "rest",
+   "args": [
+    "383",
+    "334"
+   ],
+   "expect": "The rotation of 383 paddocks at 334 days of grazing each gives 127588 days of rest before the return."
+  },
+  {
+   "fn": "rest",
+   "args": [
+    "225",
+    "347"
+   ],
+   "expect": "The rotation of 225 paddocks at 347 days of grazing each gives 77728 days of rest before the return."
+  },
+  {
+   "fn": "rest",
+   "args": [
+    "192",
+    "251"
+   ],
+   "expect": "The rotation of 192 paddocks at 251 days of grazing each gives 47941 days of rest before the return."
+  },
+  {
+   "fn": "rest",
+   "args": [
+    "31",
+    "453"
+   ],
+   "expect": "The rotation of 31 paddocks at 453 days of grazing each gives 13590 days of rest before the return."
+  },
+  {
+   "fn": "rest",
+   "args": [
+    "244",
+    "639"
+   ],
+   "expect": "The rotation of 244 paddocks at 639 days of grazing each gives 155277 days of rest before the return."
+  },
+  {
+   "fn": "rest",
+   "args": [
+    "331",
+    "665"
+   ],
+   "expect": "The rotation of 331 paddocks at 665 days of grazing each gives 219450 days of rest before the return."
+  },
+  {
+   "fn": "rest",
+   "args": [
+    "620",
+    "408"
+   ],
+   "expect": "The rotation of 620 paddocks at 408 days of grazing each gives 252552 days of rest before the return."
+  },
+  {
+   "fn": "rest",
+   "args": [
+    "730",
+    "322"
+   ],
+   "expect": "The rotation of 730 paddocks at 322 days of grazing each gives 234738 days of rest before the return."
+  },
+  {
+   "fn": "rest",
+   "args": [
+    "620",
+    "622"
+   ],
+   "expect": "The rotation of 620 paddocks at 622 days of grazing each gives 385018 days of rest before the return."
+  },
+  {
+   "fn": "rest",
+   "args": [
+    "48",
+    "926"
+   ],
+   "expect": "The rotation of 48 paddocks at 926 days of grazing each gives 43522 days of rest before the return."
+  },
+  {
+   "fn": "rest",
+   "args": [
+    "877",
+    "608"
+   ],
+   "expect": "The rotation of 877 paddocks at 608 days of grazing each gives 532608 days of rest before the return."
+  },
+  {
+   "fn": "rest",
+   "args": [
+    "240",
+    "844"
+   ],
+   "expect": "The rotation of 240 paddocks at 844 days of grazing each gives 201716 days of rest before the return."
+  },
+  {
+   "fn": "rest",
+   "args": [
+    "809",
+    "241"
+   ],
+   "expect": "The rotation of 809 paddocks at 241 days of grazing each gives 194728 days of rest before the return."
+  },
+  {
+   "fn": "rest",
+   "args": [
+    "65",
+    "357"
+   ],
+   "expect": "The rotation of 65 paddocks at 357 days of grazing each gives 22848 days of rest before the return."
+  },
+  {
+   "fn": "rest",
+   "args": [
+    "161",
+    "968"
+   ],
+   "expect": "The rotation of 161 paddocks at 968 days of grazing each gives 154880 days of rest before the return."
+  }
+ ],
+ "errors": [
+  [
+   "forage",
+   [
+    "0",
+    "2000",
+    "50"
+   ]
+  ],
+  [
+   "forage",
+   [
+    "10",
+    "0",
+    "50"
+   ]
+  ],
+  [
+   "forage",
+   [
+    "10",
+    "2000",
+    "0"
+   ]
+  ],
+  [
+   "forage",
+   [
+    "10",
+    "2000",
+    "50.5"
+   ]
+  ],
+  [
+   "demand",
+   [
+    "0",
+    "1000",
+    "3",
+    "30"
+   ]
+  ],
+  [
+   "demand",
+   [
+    "5",
+    "0",
+    "3",
+    "30"
+   ]
+  ],
+  [
+   "demand",
+   [
+    "5",
+    "1000",
+    "0",
+    "30"
+   ]
+  ],
+  [
+   "demand",
+   [
+    "5",
+    "1000",
+    "3",
+    "0"
+   ]
+  ],
+  [
+   "days",
+   [
+    "0",
+    "150"
+   ]
+  ],
+  [
+   "days",
+   [
+    "10000",
+    "0"
+   ]
+  ],
+  [
+   "rest",
+   [
+    "0",
+    "6"
+   ]
+  ],
+  [
+   "rest",
+   [
+    "5",
+    "0"
+   ]
+  ]
+ ]
+}
